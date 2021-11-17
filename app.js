@@ -15,6 +15,8 @@ function checkTrienagle() {
         resultField.innerHTML = 'Das ist kein Dreieck!';
     } else if (s1 <= 0 || s2 <= 0 || s3 <= 0) {
         resultField.innerHTML = 'Ungültiger Wert! Das ist kein Dreieck!';
+    } else if (firstseite.value === null || firstseite.value === "", secondseite.value === null || secondseite.value === "", dritteseite.value === null || dritteseite.value === "") {
+        resultField.innerHTML = "Bitte füllen Sie alle Pflichtfelder aus";
     } else if ((s1 === s2) && (s2 === s3)) {
         resultField.innerHTML = 'Das Dreieck ist gleichseitig!!!';
     } else if ((s1 !== s2) && (s2 !== s3) && (s1 !== s3)) {
